@@ -22,7 +22,7 @@ func main() {
 	http.HandleFunc("/", indexHandler)
 
 	if err := http.ListenAndServe(*addr, nil); err != nil {
-		log.Fatal("ListenAndServe:", err)
+		log.Fatal("[ListenAndServe]", err)
 	}
 }
 
